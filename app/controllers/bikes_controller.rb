@@ -6,8 +6,13 @@ class BikesController < ApplicationController
   end 
 
   def show
+    render json: @bike
   end 
 
   def create 
+    @bike = Bike.new(
+      
+    )
+  end 
 
 end
