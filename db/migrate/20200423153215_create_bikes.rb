@@ -3,7 +3,7 @@ class CreateBikes < ActiveRecord::Migration[6.0]
     create_table :bikes do |t|
       t.string :brand
       t.text :description
-      t.int :frame_size
+      t.integer :frame_size
       t.float :price
 
       t.timestamps
