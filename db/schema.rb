@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(version: 2020_04_23_153215) do
 
   create_table "bikes", force: :cascade do |t|
     t.string "brand"
+    t.string "model"
     t.text "description"
-    t.integer "frame_size"
     t.float "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
